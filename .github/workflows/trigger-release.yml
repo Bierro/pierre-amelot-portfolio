@@ -15,14 +15,14 @@ jobs:
           echo "This workflow should not be triggered with workflow_dispatch on a branch other than main"
           exit 1
       - name: Checkout Repo
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         # We need elevated user permissions to be able to push tags and commits
         # to main (because it's a protected branch) so we use a deploy secret
         # here.
         with:
           ssh-key: ${{ secrets.TAG_PUSH_DEPLOY_KEY }}
       - name: Setup Node
-        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version-file: '.nvmrc'
       - name: Get Date
