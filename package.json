@@ -50,7 +50,7 @@
     "leva": "^0.9.35",
     "lucide-react": "^0.298.0",
     "maath": "^0.10.7",
-    "next": "^14.0.4",
+    "next": "^14.1.1",
     "postcss": "^8.4.32",
     "postcss-nesting": "^12.0.2",
     "postcss-preset-env": "^9.3.0",
